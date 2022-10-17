@@ -1,0 +1,121 @@
+<%- include('partials/header') %>
+
+    <section class="main">
+        <div class="postWrapper">
+            <div class="left-col">
+
+                <%   usersWithPost.forEach(function(user){ %>
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="/Images/cover 2.png" alt=""></div>
+                                <p class="username">
+                                    <%= user.username %>
+                                </p>
+                            </div>
+                            <img src="/Images/option.PNG" class="options" alt="">
+                        </div>
+                        <img src="/Images/<%=user.img %>" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="/Images/like.PNG" class="icon" alt="">
+                                <img src="/Images/comment.PNG" class="icon" alt="">
+                                <img src="/Images/send.PNG" class="icon" alt="">
+                                <img src="/Images/save.PNG" class="save icon" alt="">
+                            </div>
+                            <p class="likes">1,012 likes</p>
+                            <p class="likes">
+                                <%= user.cityname %>
+                            </p>
+                            <p class="description"><span><%= user.username%></span>
+                                <%= user.workdetails %>
+                            </p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="/Images/smile.PNG" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">post</button>
+                        </div>
+                    </div>
+                    <%  }) %>
+
+
+                        <!-- <div class="post">
+                            <div class="info">
+                                <div class="user">
+                                    <div class="profile-pic"><img src="/Images/cover 2.png" alt=""></div>
+                                    <p class="username">Contractor</p>
+                                </div>
+                                <img src="/Images/option.PNG" class="options" alt="">
+                            </div>
+                            <img src="/Images/cover 2.png" class="post-image" alt="">
+                            <div class="post-content">
+                                <div class="reaction-wrapper">
+                                    <img src="/Images/like.PNG" class="icon" alt="">
+                                    <img src="/Imagesimg/comment.PNG" class="icon" alt="">
+                                    <img src="/Imagesimg/send.PNG" class="icon" alt="">
+                                    <img src="/Images/save.PNG" class="save icon" alt="">
+                                </div>
+                                <p class="likes">1,012 likes</p>
+                                <p class="description"><span>username </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?</p>
+                                <p class="post-time">2 minutes ago</p>
+                            </div>
+                            <div class="comment-wrapper">
+                                <img src="/Images/smile.PNG" class="icon" alt="">
+                                <input type="text" class="comment-box" placeholder="Add a comment">
+                                <button class="comment-btn">post</button>
+                            </div>
+                        </div>-->
+
+            </div>
+            <div class="right-col">
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="/Images/cover 2.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">adarsh</p>
+                        <p class="sub-text">kunaal kumar</p>
+                    </div>
+                    <button class="action-btn">switch</button>
+                </div>
+                <p class="suggestion-text">Suggestions for you</p>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="/Images/cover 9.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">Contractor1</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="/Images/cover 10.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">Contractor2</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="/Images/cover 11.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">Contractor3</p>
+                        <p class="sub-text">followed bu user</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <%- include('partials/footer') %>

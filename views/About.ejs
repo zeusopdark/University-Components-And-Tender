@@ -1,0 +1,190 @@
+<%- include('partials/header') %>
+
+    <Section class="aboutus">
+
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="imgBigger">
+                    <img src="/Images/main.jpg" class="img-fluid img-thumbnail" id="main" alt="">
+
+                    <div class="small-img-group">
+                        <div class="small-img">
+                            <img src="/Images/main.jpg" class="img-fluid img-thumbnail rest" alt="">
+                        </div>
+                        <div class="small-img">
+                            <img src="/Images/co2.jpg" class="img-fluid img-thumbnail rest" alt="">
+                        </div>
+                        <div class="small-img">
+                            <img src="/Images/co3.jpg" class="img-fluid img-thumbnail rest" alt="">
+                        </div>
+                        <div class="small-img">
+                            <img src="/Images/co1.jpg" class="img-fluid img-thumbnail rest" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-7 det">
+                <h2>
+                    Description
+                </h2>
+                <h3 class="tendin">Tender I'D: GFHX202</h3>
+                <h4>Price: $276</h4>
+                <h4>
+                    <b>Warranty: 2 Years</b>
+                </h4>
+                <h3 class="abts">About this Product</h3>
+                <ul>
+                    <li>
+                        This REO Desktop features an Intel Core i5-650 processor that is clocked at 3.2GHz. It has a 120GB SSD with additional 500GB HDD and SATA interface. It comes with six USB ports, front USB, and front audio jack ports.
+                    </li>
+                    <li> Enhanced Intel SpeedStep Technology, Intel Execute Disable Bit, Intel Virtualization Technology.
+                    </li>
+                    <li> U-Bolt anchoring, USB port control, administrator password, boot sequence control, boot without keyboard or mouse, hard drive password, power-on password, serial port I/O control DDR3 RAM with 2 expandables slots,, DVD R/W Slot, Audio
+                        In/Out Jacks.,</li>
+                    <li>
+                        HDD 7200 RPM SATA HDD for Fast processing. Additional Slots to support additional harddisk and SSD.
+                    </li>
+                    <li>
+                        And your Optiplex 380 comes with Lenovo/DELL/ NEC/HP/SAMSUNG/AOC/LG/IBM/Generic 17"" monitor. BASICALLY WE WILL BE SHIPPING A GENERIC MONITOR OF ANY OTHER BRAND."
+                    </li>
+                </ul>
+
+                <div class="">
+                    <div class="anct">
+                        <button class="start">-</button><button class="mid">1</button><button class="start">+</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-outline-success atc">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <hr>
+    <!-- Products  -->
+
+    <div class="reviewss">
+        <a href="review">Click here for Reviews</a>
+    </div>
+
+    <div class="category11">
+
+        <h2>Related Products</h2>
+        <div class="row">
+            <div class="col-md-3 gtmde">
+                <img src="Images/computer1.jpg" alt="" class="img-fluid img-thumbnail">
+                <p>Tender I'd:UHG2345</p>
+                <h6>Computer Products</h6><i class="fa fa-star ss"> </i><i class="fa fa-star ss">
+            </i><i class="fa fa-star ss"> </i><i class="fa fa-star ss"> </i><i class="fa fa-star ss"> </i><br>
+                <h5>$75</h5><a class="nav-link" href=""><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                <h6>Warranty :2yr</h6>
+            </div>
+            <div class="col-md-3 gtmde">
+                <img src="Images/computer2.jpg" alt="" class="img-fluid img-thumbnail">
+                <p>Tender I'd:UHG2345</p>
+                <h6>Computer Products</h6><i class="fa fa-star ss"> </i><i class="fa fa-star ss">
+            </i><i class="fa fa-star ss"> </i> </i><i class="fa fa-star ss"> </i><br>
+                <h5>$75</h5><a class="nav-link" href=""><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                <h6>Warranty :2yr</h6>
+            </div>
+            <div class="col-md-3 gtmde">
+                <img src="Images/computer3.jpg" alt="" class="img-fluid img-thumbnail">
+                <p>Tender I'd:UHG2345</p>
+                <h6>Computer Products</h6><i class="fa fa-star ss"> </i><i class="fa fa-star ss">
+            </i><i class="fa fa-star ss"> </i><i class="fa fa-star ss"> </i><i class="fa fa-star ss"> </i><br>
+                <h5>$75</h5><a class="nav-link" href=""><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                <h6>Warranty :2yr</h6>
+            </div>
+            <div class="col-md-3 gtmde">
+                <img src="Images/ch3.jpg" alt="" class="img-fluid img-thumbnail">
+                <p>Tender I'd:UHG2345</p>
+                <h6>Computer Products</h6><i class="fa fa-star ss"> </i><i class="fa fa-star ss">
+            </i> </i><i class="fa fa-star ss"> </i><i class="fa fa-star ss"> </i><br>
+                <h5>$75</h5><a class="nav-link" href=""><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                <h6>Warranty :2yr</h6>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://path-to-jquery"></script>
+    <script>
+        const input = document.querySelector('#email');
+        input.classList.add('email');
+
+        const button = document.querySelector('#something');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) { //show button //above 300px the below class will be added evertime but we just want once to be added above 300 that's
+                //why we use this below if it will just add once because after that class btnentrance will be added .
+                if (!button.classList.contains('btnEntrance')) {
+                    button.classList.remove('btnExit');
+                    button.classList.add('btnEntrance');
+                    button.style.display = 'block';
+                }
+            } else { //hide the button
+                if (button.classList.contains('btnEntrance')) { //same here
+                    button.classList.remove('btnEntrance');
+                    button.classList.add('btnExit')
+                    setTimeout(function() {
+                        button.style.display = 'none';
+                    }, 250);
+                }
+            }
+        });
+        button.addEventListener('click', () => {
+            window.scrollTo(0, 0);
+        });
+
+        const redirect = document.getElementsByClassName('get');
+        for (let i = 0; i < redirect.length; i++) {
+            redirect[i].addEventListener('click', function() {
+                console.log('you clicked me');
+                window.location.href = 'About.html';
+            });
+        }
+
+
+
+        // changing images 
+
+        const mainImage = document.querySelector('#main');
+        const restImage = document.querySelectorAll('.rest');
+
+        for (let i = 0; i < restImage.length; i++) {
+            const src2 = restImage[i].getAttribute('src');
+            restImage[i].addEventListener('click', function() {
+                mainImage.setAttribute('src', src2);
+                // mainImage.src = restImage[i].src;  //this can also be done same as above;
+            });
+        }
+
+        //product quantity
+
+        const main = document.querySelector('.mid');
+        var count = 1;
+        const start = document.querySelectorAll('.start');
+
+        for (let i = 0; i < start.length; i++) {
+            start[i].addEventListener('click', function() {
+                console.log(start[i].innerText);
+                if (start[i].innerText === '-' && count > 1) {
+                    count = count - 1;
+                    main.textContent = count;
+                } else if (start[i].innerText === '+') {
+                    count = count + 1;
+                    main.textContent = count;
+                }
+            });
+        }
+        const add = document.querySelector('.atc');
+        add.addEventListener('click', () => {
+            alert('Product Added Successfully');
+            main.textContent = '1';
+            count = 1;
+        });
+
+        // redirect to About page
+
+        // onclick = "window.location.href='About.html';"
+    </script>
+    <%- include('partials/footer') %>

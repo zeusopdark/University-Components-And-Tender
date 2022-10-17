@@ -1,0 +1,127 @@
+<%- include('partials/header') %>
+    <div class="tend_image">
+        <img src="Images/tend.png" class="img-fluid" alt="">
+    </div>
+
+    <div class="tend">
+        <%   usersWithTender.forEach(function(user){ %>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <p class="nav-link active" aria-current="true">
+                                <%= user.category1 %>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TID :<%= user.tenderid %></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bid Before: 10 October
+                        2022</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%=  user.universityname %>
+                    </h5>
+                    <p class="card-text">
+                        <%=  user.abouttender %>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">View Tender</a>
+                </div>
+            </div>
+            <%  }) %>
+                <br>
+                <div class="card text-center">
+
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true">Computer/Hardware</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TID : ABC235</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bid Before: 10 October
+                        2022</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">XYZ UNIVERSITY KANPUR</h5>
+                        <p class="card-text">Supply, installation, migration &amp; support for managed<i> Wide area network
+                </i>(wan) and secure internet infrastructure and services<br></p>
+                        <a href="tenderdetails" class="btn btn-primary">View Tender</a>
+                    </div>
+                </div><br>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true">ELECTRICAL EQUIPMENTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TID : ABC146</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bid Before: 12 October
+                        2022</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">MKL UNIVERSITY KANPUR</h5>
+                        <p class="card-text">Providing of highway street lightings</p>
+                        <a href="#" class="btn btn-primary">View Tender</a>
+                    </div>
+                </div><br>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true">ELECTRICAL EQUIPMENTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TID : ABC193</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bid Before: 14 October
+                        2022</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">DEMO UNIVERSITY KANPUR</h5>
+                        <p class="card-text">Supply of highmast lighting tower 30 mtr, 16no luminaires350w<i> LED </i>with install.
+                        </p>
+                        <a href="#" class="btn btn-primary">View Tender</a>
+                    </div>
+                </div><br>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true">Computer/Hardware</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TID : DEF235</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bid Before: 10 October
+                        2022</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">XYZ UNIVERSITY</h5>
+                        <p class="card-text">Supply installation and commisioning of it equipments</p>
+                        <a href="#" class="btn btn-primary">View Tender</a>
+                    </div>
+                </div>
+    </div><br>
+
+    <%- include('partials/footer') %>
